@@ -38,89 +38,90 @@
 
 	</div>
 
-		<main>
-			<form class="filter-item" action="#">
+	<main>
+		<form class="filter-item" action="#">
 
-				<div class="filter-item-price">
-					<div class="scale">
-						<b>Стоимость</b>
-					</div>
-
-					<div class="controls">
-						от <input class="min-price" type="text" value="0"> до <input class="max-price" type="text" value="15000">
-					</div>
+			<div class="filter-item-price">
+				<b>Стоимость</b>
+				<div class="price-slider"></div>
+				<div class="controls">
+					от <input class="min-price" type="text" value="0"> до <input class="max-price" type="text" value="15000">
 				</div>
+			</div>
 
-				<div class="filter-item-net">
-					<b>Сетка</b>
-					<input type="radio" name="item-net" id="net-1" value="Adaptive" checked>
-					<label for="net-1">Адаптивная</label>
-					<input type="radio" name="item-net" id="net-2" value="Fixed">
-					<label for="net-2">Фиксированная</label>
-					<input type="radio" name="item-net" id="net-3" value="Rubber">
-					<label for="net-3">Резиновая</label>
-				</div>
-				<div class="filter-item-features">
-					<b>Особенности</b>
-					<input type="checkbox" name="item-feature-1" id="feature-1" value="slider" checked>
-					<label for="feature-1">Слайдер</label>
-					<input type="checkbox" name="item-feature-2" id="feature-2" value="block-features">
-					<label for="feature-2">Блок преимуществ</label>
-					<input type="checkbox" name="item-feature-3" id="feature-3" value="news" checked>
-					<label for="feature-3">Новости</label>
-					<input type="checkbox" name="item-feature-4" id="feature-4" value="gallery">
-					<label for="feature-4">Галерея</label>
-					<input type="checkbox" name="item-feature-5" id="feature-5" value="basket">
-					<label for="feature-5">Корзина</label>
-				</div>
-				<button class="btn-gray">Показать</button>
-			</form>
-			<section class="catalog">
-				<b>Сортировать:</b>
-				<a>по цене</a>
-				<a>по типу</a>
-				<a>по названию</a>
-				<a class="sort-down">&#8595;</a>
-				<a class="sort-up">&#8593;</a>
+			<div class="filter-item-net">
+				<b>Сетка</b>
+				<input type="radio" name="item-net" id="net-1" value="Adaptive" checked>
+				<label for="net-1">Адаптивная</label>
+				<input type="radio" name="item-net" id="net-2" value="Fixed">
+				<label for="net-2">Фиксированная</label>
+				<input type="radio" name="item-net" id="net-3" value="Rubber">
+				<label for="net-3">Резиновая</label>
+			</div>
 
-				<div class="catalog-item">
-					<img src="blank.png" alt="Шаблон Sedona. Информационный сайт для туристов" width="100" height="200">
-					<div class="catalog-item-price-info">
-						<b>Sedona</b>
-						<p>Информационный сайт для туристов</p>
-						<a class="btn" href="#">9900 руб.</a>
-					</div>
-				</div>
+			<div class="filter-item-features">
+				<b>Особенности</b>
+				<input type="checkbox" name="item-feature-1" id="feature-1" value="slider" checked>
+				<label for="feature-1">Слайдер</label>
+				<input type="checkbox" name="item-feature-2" id="feature-2" value="block-features">
+				<label for="feature-2">Блок преимуществ</label>
+				<input type="checkbox" name="item-feature-3" id="feature-3" value="news" checked>
+				<label for="feature-3">Новости</label>
+				<input type="checkbox" name="item-feature-4" id="feature-4" value="gallery">
+				<label for="feature-4">Галерея</label>
+				<input type="checkbox" name="item-feature-5" id="feature-5" value="basket">
+				<label for="feature-5">Корзина</label>
+			</div>
+			
+			<button class="btn-gray">Показать</button>
+		</form>
 
-				<div class="catalog-item">
-					<img src="blank.png" alt="Шаблон PINK. Приложение для мобильного телефона" width="100" height="200">
-				</div>
+		<section class="catalog">
+			<b>Сортировать:</b>
+			<a>по цене</a>
+			<a>по типу</a>
+			<a>по названию</a>
+			<a class="sort-down">&#8595;</a>
+			<a class="sort-up">&#8593;</a>
 
-				<div class="catalog-item">
-					<img src="blank.png" alt="Шаблон Barbershop" width="100" height="200">
+			<div class="catalog-item">
+				<img src="blank.png" alt="Шаблон Sedona. Информационный сайт для туристов" width="100" height="200">
+				<div class="catalog-item-price-info">
+					<b>Sedona</b>
+					<p>Информационный сайт для туристов</p>
+					<a class="btn" href="#">9900 руб.</a>
 				</div>
+			</div>
 
-				<div class="catalog-item">
-					<img src="blank.png" alt="Шаблон MISHKA" width="100" height="200">
-				</div>
+			<div class="catalog-item">
+				<img src="blank.png" alt="Шаблон PINK. Приложение для мобильного телефона" width="100" height="200">
+			</div>
 
-				<div class="catalog-item">
-					<img src="blank.png" alt="Шаблон C+" width="100" height="200">
-				</div>
-				<div class="catalog-item">
-					<img src="blank.png" alt="Шаблон Кваст" width="100" height="200">
-				</div>
+			<div class="catalog-item">
+				<img src="blank.png" alt="Шаблон Barbershop" width="100" height="200">
+			</div>
 
-				<div class="pages">
-					<a href="#">1</a>
-					<a href="#">2</a>
-					<a href="#">3</a>
-					<a class="btn-gray" href="#">Следующая</a>
-				</div>
+			<div class="catalog-item">
+				<img src="blank.png" alt="Шаблон MISHKA" width="100" height="200">
+			</div>
+
+			<div class="catalog-item">
+				<img src="blank.png" alt="Шаблон C+" width="100" height="200">
+			</div>
+			<div class="catalog-item">
+				<img src="blank.png" alt="Шаблон Кваст" width="100" height="200">
+			</div>
+
+			<div class="pages">
+				<a href="#">1</a>
+				<a href="#">2</a>
+				<a href="#">3</a>
+				<a class="btn-gray" href="#">Следующая</a>
+			</div>
 
 
-			</section>
-		</main>
+		</section>
+	</main>
 		<div class="block-contacts">
 			<div class="contact-info">
 				<p>
