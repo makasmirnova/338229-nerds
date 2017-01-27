@@ -41,39 +41,58 @@
 	<main>
 		<form class="filter-item" action="#">
 
-			<div class="filter-item-price">
-				<b>Стоимость</b>
+			<fieldset class="filter-item-price">
+				<legend>Стоимость</legend>
 				<div class="price-slider"></div>
 				<div class="controls">
 					от <input class="min-price" type="text" value="0"> до <input class="max-price" type="text" value="15000">
 				</div>
-			</div>
+			</fieldset>
 
-			<div class="filter-item-net">
-				<b>Сетка</b>
-				<input type="radio" name="item-net" id="net-1" value="Adaptive" checked>
-				<label for="net-1">Адаптивная</label>
-				<input type="radio" name="item-net" id="net-2" value="Fixed">
-				<label for="net-2">Фиксированная</label>
-				<input type="radio" name="item-net" id="net-3" value="Rubber">
-				<label for="net-3">Резиновая</label>
-			</div>
+			<fieldset class="filter-item-net">
+				<legend>Сетка</legend>
+				<ul>
+					<li>
+						<input type="radio" name="item-net" id="net-1" value="Adaptive" checked>
+						<label for="net-1">Адаптивная</label>
+					</li>
+					<li>
+						<input type="radio" name="item-net" id="net-2" value="Fixed">
+						<label for="net-2">Фиксированная</label>
+					</li>
+					<li>
+						<input type="radio" name="item-net" id="net-3" value="Rubber">
+						<label for="net-3">Резиновая</label>
+					</li>
+				</ul>
+			</fieldset>
 
-			<div class="filter-item-features">
-				<b>Особенности</b>
-				<input type="checkbox" name="item-feature-1" id="feature-1" value="slider" checked>
-				<label for="feature-1">Слайдер</label>
-				<input type="checkbox" name="item-feature-2" id="feature-2" value="block-features">
-				<label for="feature-2">Блок преимуществ</label>
-				<input type="checkbox" name="item-feature-3" id="feature-3" value="news" checked>
-				<label for="feature-3">Новости</label>
-				<input type="checkbox" name="item-feature-4" id="feature-4" value="gallery">
-				<label for="feature-4">Галерея</label>
-				<input type="checkbox" name="item-feature-5" id="feature-5" value="basket">
-				<label for="feature-5">Корзина</label>
-			</div>
+			<fieldset class="filter-item-features">
+				<legend>Особенности</legend>
+				<ul>
+					<li>
+						<input type="checkbox" name="item-feature-1" id="feature-1" value="slider" checked>
+						<label for="feature-1">Слайдер</label>
+					</li>
+					<li>
+						<input type="checkbox" name="item-feature-2" id="feature-2" value="block-features">
+						<label for="feature-2">Блок преимуществ</label>
+					</li>
+					<li>
+						<input type="checkbox" name="item-feature-3" id="feature-3" value="news" checked>
+						<label for="feature-3">Новости</label>
+					</li>
+					<li>
+						<input type="checkbox" name="item-feature-4" id="feature-4" value="gallery">
+						<label for="feature-4">Галерея</label>
+					<li>
+						<input type="checkbox" name="item-feature-5" id="feature-5" value="basket">
+						<label for="feature-5">Корзина</label>
+					</li>
+				</ul>
+			</fieldset>
 
-			<button class="btn-gray">Показать</button>
+			<button class="btn-gray" type="submit">Показать</button>
 		</form>
 
 		<section class="catalog">
