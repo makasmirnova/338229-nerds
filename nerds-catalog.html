@@ -13,7 +13,7 @@
 				<a href="#" class="header-logo">
 					<img src="logo.png" alt="Nerd's - дизайн студия" width="205" height="55">
 				</a>
-				<ul>
+				<ul class="header-nav-list">
 					<li>
 						<a href="#">Студия</a>
 					</li>
@@ -38,10 +38,10 @@
 
 	</div>
 
-	<main>
+	<main class="content">
 		<form class="filter-item" action="#">
 
-			<fieldset class="filter-item-price">
+			<fieldset class="filter-group">
 				<legend>Стоимость</legend>
 				<div class="price-slider"></div>
 				<div class="controls">
@@ -49,9 +49,9 @@
 				</div>
 			</fieldset>
 
-			<fieldset class="filter-item-net">
+			<fieldset class="filter-group">
 				<legend>Сетка</legend>
-				<ul>
+				<ul class="filter-list">
 					<li>
 						<input type="radio" name="item-net" id="net-1" value="Adaptive" checked>
 						<label for="net-1">Адаптивная</label>
@@ -67,9 +67,9 @@
 				</ul>
 			</fieldset>
 
-			<fieldset class="filter-item-features">
+			<fieldset class="filter-group">
 				<legend>Особенности</legend>
-				<ul>
+				<ul class="filter-list">
 					<li>
 						<input type="checkbox" name="item-feature-1" id="feature-1" value="slider" checked>
 						<label for="feature-1">Слайдер</label>
@@ -96,12 +96,15 @@
 		</form>
 
 		<section class="catalog">
-			<b>Сортировать:</b>
-			<a>по цене</a>
-			<a>по типу</a>
-			<a>по названию</a>
-			<a class="sort-down">&#8595;</a>
-			<a class="sort-up">&#8593;</a>
+
+			<div class="sort">
+				<b>Сортировать:</b>
+				<a>по цене</a>
+				<a>по типу</a>
+				<a>по названию</a>
+				<a class="sort-down">&#8595;</a>
+				<a class="sort-up">&#8593;</a>
+			</div>
 
 			<div class="catalog-item">
 				<img src="blank.png" alt="Шаблон Sedona. Информационный сайт для туристов" width="100" height="200">
@@ -179,7 +182,7 @@
 		</section>
 	</main>
 
-	<footer>
+	<footer class="footer">
 		<div class="contact">
 			<h3>N&euml;rds Design Studio</h3>
 			<p>
