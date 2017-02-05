@@ -10,36 +10,42 @@
 <body>
 
 	<header class="header">
-		<div class="container">
-			<nav class="header-nav">
-				<a href="index.html" class="header-logo">
-					<img src="img/nerds-logo.png" alt="Nerd's - дизайн студия" width="161" height="65">
-				</a>
-				<ul class="header-nav-list">
-					<li>
-						<a href="#">Студия</a>
-					</li>
-					<li>
-						<a href="#">Клиенты</a>
-					</li>
-					<li>
-						<a href="#" class="active">Магазин</a>
-					</li>
-					<li>
-						<a href="#">Контакты</a>
-					</li>
-				</ul>
-			</nav>
-			<a class="header-basket" href="#">Корзина</a>
+		<div class="container clearfix">
+			<div class="nav-container">
+				<nav class="header-nav">
+					<a class="header-logo">
+						<img src="img/nerds-logo.png" alt="Nerd's - дизайн студия" width="160" height="65">
+					</a>
+					<ul class="header-nav-list">
+						<li>
+							<a href="#">Студия</a>
+						</li>
+						<li>
+							<a href="#">Клиенты</a>
+						</li>
+						<li>
+							<a href="nerds-catalog.html">Магазин</a>
+						</li>
+						<li>
+							<a href="#">Контакты</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+			<div class="login-block">
+				<a class="header-basket" href="#">Корзина</a>
+			</div>
 		</div>
 	</header>
 
 	<div class="topic">
-		<h1>Магазин готовых шаблонов</h1>
+			<div class="container">
+				<h1>Магазин готовых шаблонов</h1>
+			</div>
 	</div>
 
 	<main class="content">
-		<div class="container">
+		<div class="container clearfix">
 			<form class="filter-item" action="#">
 
 				<fieldset class="filter-group">
@@ -98,68 +104,74 @@
 
 			<section class="catalog">
 
-				<div class="sort">
-					<b>Сортировать:</b>
-					<a>по цене</a>
-					<a>по типу</a>
-					<a>по названию</a>
-					<a class="sort-down">&#8595;</a>
-					<a class="sort-up">&#8593;</a>
+				<div class="sort clearfix">
+					<div class="sort-title">
+						<b>Сортировать:</b>
+					</div>
+					<div class="sort-type">
+						<a>по цене</a>
+						<a>по типу</a>
+						<a>по названию</a>
+						<a class="sort-down">&#8595;</a>
+						<a class="sort-up">&#8593;</a>
+					</div>
 				</div>
+				<div class="catalog-data clearfix">
 
-				<article class="catalog-item">
-					<img src="img/img-sedona.jpg" alt="Шаблон Sedona. Информационный сайт для туристов" width="360" height="576">
-					<div class="catalog-item-info">
-						<h2><a href="#">Sedona</a></h2>
-						<p>Информационный сайт для туристов</p>
-						<a class="btn" href="#">9900 руб.</a>
-					</div>
-				</article>
+					<article class="catalog-item">
+						<img src="img/img-sedona.jpg" alt="Шаблон Sedona. Информационный сайт для туристов" width="360" height="576">
+						<div class="catalog-item-info">
+							<h2><a href="#">Sedona</a></h2>
+							<p>Информационный сайт для туристов</p>
+							<a class="btn" href="#">9900 руб.</a>
+						</div>
+					</article>
 
-				<article class="catalog-item">
-					<img src="img/img-pink.jpg" alt="Шаблон PINK. Продуктовый лендинг приложений" width="360" height="576">
-					<div class="catalog-item-info">
-						<h2><a href="#">Pink app</a></h2>
-						<p>Продуктовый лендинг приложения для iOS и Android</p>
-						<a class="btn" href="#">9900 руб.</a>
-					</div>
-				</article>
+					<article class="catalog-item">
+						<img src="img/img-pink.jpg" alt="Шаблон PINK. Продуктовый лендинг приложений" width="360" height="576">
+						<div class="catalog-item-info">
+							<h2><a href="#">Pink app</a></h2>
+							<p>Продуктовый лендинг приложения для iOS и Android</p>
+							<a class="btn" href="#">9900 руб.</a>
+						</div>
+					</article>
 
-				<article class="catalog-item">
-					<img src="img/img-barbershop.jpg" alt="Шаблон Barbershop. Сайт салона красоты" width="360" height="576">
-					<div class="catalog-item-info">
-						<h2><a href="#">Barbershop</a></h2>
-						<p>Сайт салона красоты. Для мужчин, да.</p>
-						<a class="btn" href="#">9900 руб.</a>
-					</div>
-				</article>
+					<article class="catalog-item">
+						<img src="img/img-barbershop.jpg" alt="Шаблон Barbershop. Сайт салона красоты" width="360" height="576">
+						<div class="catalog-item-info">
+							<h2><a href="#">Barbershop</a></h2>
+							<p>Сайт салона красоты. Для мужчин, да.</p>
+							<a class="btn" href="#">9900 руб.</a>
+						</div>
+					</article>
 
-				<article class="catalog-item">
-					<img src="img/img-mishka.jpg" alt="Шаблон MISHKA. Интернет магазин игрушек" width="360" height="576">
-					<div class="catalog-item-info">
-						<h2><a href="#">Mishka</a></h2>
-						<p>Интернет-магазин вязаных игрушек</p>
-						<a class="btn" href="#">9900 руб.</a>
-					</div>
-				</article>
+					<article class="catalog-item">
+						<img src="img/img-mishka.jpg" alt="Шаблон MISHKA. Интернет магазин игрушек" width="360" height="576">
+						<div class="catalog-item-info">
+							<h2><a href="#">Mishka</a></h2>
+							<p>Интернет-магазин вязаных игрушек</p>
+							<a class="btn" href="#">9900 руб.</a>
+						</div>
+					</article>
 
-				<article class="catalog-item">
-					<img src="img/img-aplus.jpg" alt="Шаблон A Plus. Лендинг курсов" width="360" height="576">
-					<div class="catalog-item-info">
-						<h2><a href="#">A Plus</a></h2>
-						<p>Лендинг курсов повышения квалификации</p>
-						<a class="btn" href="#">9900 руб.</a>
-					</div>
-				</article>
+					<article class="catalog-item">
+						<img src="img/img-aplus.jpg" alt="Шаблон A Plus. Лендинг курсов" width="360" height="576">
+						<div class="catalog-item-info">
+							<h2><a href="#">A Plus</a></h2>
+							<p>Лендинг курсов повышения квалификации</p>
+							<a class="btn" href="#">9900 руб.</a>
+						</div>
+					</article>
 
-				<article class="catalog-item">
-					<img src="img/img-kvast.jpg" alt="Шаблон Кваст. Промо-сайт" width="360" height="576">
-					<div class="catalog-item-info">
-						<h2><a href="#">Кваст</a></h2>
-						<p>Промо-сайт производителя крафтового кваса</p>
-						<a class="btn" href="#">9900 руб.</a>
-					</div>
-				</article>
+					<article class="catalog-item">
+						<img src="img/img-kvast.jpg" alt="Шаблон Кваст. Промо-сайт" width="360" height="576">
+						<div class="catalog-item-info">
+							<h2><a href="#">Кваст</a></h2>
+							<p>Промо-сайт производителя крафтового кваса</p>
+							<a class="btn" href="#">9900 руб.</a>
+						</div>
+					</article>
+				</div>
 
 				<div class="pages">
 					<a href="#">1</a>
@@ -175,13 +187,15 @@
 
 	<footer class="footer">
 		<div class="container">
-			<section class="contact">
-				<h3>N&euml;rds Design Studio</h3>
-				<p>
-					Адрес: 191186, г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
-					<a href="tel:78122757575">Телефон: +7 (812) 275-75-75</a>
-				</p>
-				<a class="btn btn-red" href="#">Напишите нам</a>
+			<section class="contact-block">
+				<div class="contact">
+					<h3>N&euml;rds Design Studio</h3>
+					<p>
+						Адрес: 191186, г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
+						<a href="tel:78122757575">Телефон: +7 (812) 275-75-75</a>
+					</p>
+					<a class="btn btn-red" href="#">Напишите нам</a>
+				</div>
 			</section>
 
 			<section class="feedback">
@@ -204,10 +218,12 @@
 				</form>
 			</section>
 
-			<section class="footer-social">
-				<a class="social-btn social-btn-vk" href="#">Вконтакте</a>
-				<a class="social-btn social-btn-fb" href="#">Фейсбук</a>
-				<a class="social-btn social-btn-inst" href="#">Инстаграм</a>
+			<section class="footer-social clearfix">
+				<div class="footer-social-buttons">
+					<a class="social-btn social-btn-vk" href="#">Вконтакте</a>
+					<a class="social-btn social-btn-fb" href="#">Фейсбук</a>
+					<a class="social-btn social-btn-inst" href="#">Инстаграм</a>
+				</div>
 				<div class="footer-discount-info">
 					<b>Давайте дружить, это выгодно!</b>
 					<p>Скидка 10% для друзей из социальных сетей.</p>
