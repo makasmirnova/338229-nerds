@@ -3,6 +3,8 @@
 
 <head>
 	<meta charset="utf-8">
+	<link href="css/normalize.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
 	<link rel="stylesheet" href="css/style.css">
 	<title>Nerd's - студия дизайна</title>
 </head>
@@ -12,50 +14,56 @@
 	<header class="header">
 		<div class="container clearfix">
 			<div class="nav-container">
-				<nav class="header-nav">
+				<nav class="header-nav clearfix">
 					<a class="header-logo">
 						<img src="img/nerds-logo.png" alt="Nerd's - дизайн студия" width="160" height="65">
 					</a>
 					<ul class="header-nav-list">
 						<li>
-							<a href="#">Студия</a>
+							<a class="header-nav-link" href="#">Студия</a>
 						</li>
 						<li>
-							<a href="#">Клиенты</a>
+							<a class="header-nav-link" href="#">Клиенты</a>
 						</li>
 						<li>
-							<a href="nerds-catalog.html">Магазин</a>
+							<a class="header-nav-link" href="nerds-catalog.html">Магазин</a>
 						</li>
 						<li>
-							<a href="#">Контакты</a>
+							<a class="header-nav-link" href="#">Контакты</a>
 						</li>
 					</ul>
 				</nav>
 			</div>
 			<div class="login-block">
-				<a class="header-basket" href="#">Корзина</a>
+				<a class="header-basket header-basket-current" href="#"><span>Корзина</span></a>
 			</div>
 		</div>
 	</header>
 
 	<div class="slider">
 		<div class="container">
-			<div class="slider-item">
-				<b>Долго, дорого, скрупулезно.</b>
-				<p>Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
-				<a class="btn btn-red" href="#">Узнать больше</a>
+			<div class="slider-item" style="background-image: url('./img/slide1.png')" >
+				<div class="slider-item-content">
+					<b class="slider-item-header">Долго, дорого, скрупулезно.</b>
+					<p class="slider-item-text">Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
+					<a class="btn btn-red" href="#">Узнать больше</a>
+				</div>
 			</div>
 
-			<div class="slider-item">
-				<b>Любим математику как никто другой</b>
-				<p>Никакого креатива, только математические формулы для расчета идеальных пропорций.</p>
-				<a class="btn btn-red" href="#">Узнать больше</a>
+			<div class="slider-item" style="background-image: url('./img/slide2.png')">
+				<div class="slider-item-content">
+					<b class="slider-item-header">Любим математику как никто другой</b>
+					<p class="slider-item-text">Никакого креатива, только математические формулы для расчета идеальных пропорций.</p>
+					<a class="btn btn-red" href="#">Узнать больше</a>
+				</div>
 			</div>
 
-			<div class="slider-item">
-				<b>Только ночь, только хардкор</b>
-				<p>Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
-				<a class="btn btn-red" href="#">Узнать больше</a>
+			<div class="slider-item" style="background-image: url('./img/slide3.png')">
+				<div class="slider-item-content">
+					<b class="slider-item-header">Только ночь, только хардкор</b>
+					<p class="slider-item-text">Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
+					<a class="btn btn-red" href="#">Узнать больше</a>
+				</div>
 			</div>
 
 			<div class="slider-dots">
@@ -74,16 +82,19 @@
 		<div class="container">
 			<ul class="service-features clearfix">
 				<li class="service-features-item">
+					<img src="img/website-pic.jpg" alt="Веб-сайты"  width="300" height="146">
 					<h2>Веб-сайты</h2>
 					<p>Мир никогда не будет прежним после того, как увидит ваш сайт!</p>
 					<a class="btn btn-red" href="#">Заказать</a>
 				</li>
 				<li class="service-features-item">
+					<img src="img/app-pic.jpg" alt="Веб-сайты"  width="300" height="146">
 					<h2>Приложения</h2>
 					<p>Покорите топ-10 приложений в AppStore и Google Play</p>
 					<a class="btn btn-green" href="#">Заказать</a>
 				</li>
 				<li class="service-features-item">
+					<img src="img/presentation-pic.jpg" alt="Веб-сайты"  width="300" height="146">
 					<h2>Презентации</h2>
 					<p>Вы даже не подозреваете, насколько вы изумительны!</p>
 					<a class="btn btn-yellow" href="#">Заказать</a>

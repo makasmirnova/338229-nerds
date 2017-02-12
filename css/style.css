@@ -20,7 +20,6 @@ body {
 	width: 1200px;
 	margin-left: auto;
 	margin-right: auto;
-	background-color: pink;
 }
 
 h1 {
@@ -37,6 +36,7 @@ h2 {
 	color: #000000;
 	font-weight: bold;
 	font-family: Roboto, Helvetica, sans-serif;
+	text-transform: uppercase;
 }
 
 fieldset {
@@ -57,29 +57,166 @@ fieldset {
 .header {
 	min-height: 85px;
 	padding-bottom: 20px;
-	padding-top: 50px;
+	padding-top: 48px;
+	background-color: #eeeeee;
 
 }
+
+.header-logo {
+	display: block;
+	float: left;
+	padding-right: 200px;
+}
+
+.header-logo img:hover {
+	opacity: 0.8;
+}
+
+.header-logo img:active {
+	opacity: 0.3;
+}
+
 .nav-container {
-	background-color: green;
 	width: 960px;
 	float: left;
 }
-.login-block {
-	background-color: yellow;
-	width: 160px;
-	float: right;
+
+.header-nav-list {
+	float: left;
+	text-transform: uppercase;
+	margin-top: 35px;
+	margin-bottom: 35px;
+	font-size: 16px;
+
 }
+
+.header-nav-list li {
+	display: inline-block;
+}
+
+.header-nav-list a {
+	display: block;
+	margin-right: 50px;
+	text-decoration: none;
+	color: #000000;
+}
+
+.header-nav-list a:hover {
+	color: #fb565a;
+}
+
+.header-nav-list a:active {
+	opacity: 0.3;
+}
+
+.header-nav-link.current{
+	border-bottom: 2px solid #fb565a;
+}
+
+.login-block {
+	float: right;
+	margin-top: 35px;
+	text-align: right;
+}
+
+.header-basket {
+	display: block;
+	text-transform: uppercase;
+	color: #000000;
+	text-decoration: none;
+}
+.header-basket span {
+	display: inline-block;
+}
+
+.header-basket span:hover {
+	color: #fb565a;
+}
+
+.header-basket span:active {
+	opacity: 0.3;
+}
+
+.header-basket::before {
+	content: "";
+	background-image: url("../img/cart-icon.png");
+	padding: 10px 20px;
+	background-repeat: no-repeat;
+	background-position: left center;
+}
+
+.header-basket-current {
+	border-bottom: 2px solid #fb565a;
+}
+
+
 .topic {
 	padding-bottom: 120px;
 	padding-top: 85px;
 }
+
+.slider {
+	background-color: #eeeeee;
+}
+
 .slider-item {
-	background-color: violet;
+	background-repeat: no-repeat;
+	background-position: right;
+	min-height: 413px;
+}
+
+.slider-item-content {
 	width: 400px;
 	padding-top: 70px;
 	padding-bottom: 80px;
 }
+
+.slider-item-header {
+	font-family: Roboto, Helvetica, sans-serif;
+	font-size: 55px;
+	line-height: 55px;
+	font-weight: 500;
+}
+
+.slider-item-text {
+	font-size: 16px;
+	line-height: 24px;
+	margin-bottom: 45px;
+}
+
+/* BUTTONS */
+.btn {
+	display: inline-block;
+	padding: 15px 50px;
+	color: #fff;
+	text-transform: uppercase;
+	text-decoration: none;
+	font-size: 16px;
+	line-height: 18px;
+}
+
+.btn-red {
+	background-color: #fb565a;
+}
+
+.btn-red:hover {
+	background-color: #e74246;
+}
+
+.btn-red:active {
+	background-color: #d7373b;
+	box-shadow: inset 0 3px 0 0 #c13135;
+}
+
+.btn-green {
+	background-color: #00ca74;
+}
+
+.btn-yellow {
+	background-color: #efc84a;
+}
+
+
 
 .content {
 	padding-top: 60px;
@@ -93,13 +230,26 @@ fieldset {
 .block-about-firm {
 	padding-top: 40px;
 	padding-bottom: 80px;
+
+}
+
+.block-about-firm .container {
+	border-top: 1px solid black;
+	border-bottom: 1px solid black;
 }
 
 .about-firm {
-	background-color: orange;
 	width: 660px;
 	float: left;
 	padding-top: 40px;
+}
+
+.about-firm-lead {
+	font-size: 45px;
+}
+
+.about-firm-services {
+	font-size: 16px;
 }
 
 .block-done-projects {
@@ -107,13 +257,14 @@ fieldset {
 	padding-bottom: 50px;
 }
 
-
 .service-features-item {
-	background-color: tomato;
 	width: 300px;
 	float: left;
 	margin-right: 100px;
+	list-style: none;
+
 }
+
 .service-features-item:last-child {
 	margin-right: 0px;
 }
