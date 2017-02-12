@@ -45,15 +45,6 @@ fieldset {
 	border: 0;
 }
 
-.header,
-.slider,
-.block-services,
-.block-about-firm,
-.block-done-projects,
-.footer, .topic, .content {
-	background-color: #bef;
-}
-
 .header {
 	min-height: 85px;
 	padding-bottom: 20px;
@@ -274,18 +265,57 @@ fieldset {
 	width: 360px;
 	float: right;
 }
+
 .done-projects {
-	background-color: chocolate;
 	width: 260px;
 	float: left;
 	margin-right: 40px;
+	opacity: 0.3;
 }
+
+.done-projects:hover {
+	opacity: 1;
+}
+
+.done-projects:active {
+	opacity: 0.1;
+}
+
 .done-projects:last-child {
 	margin-right: 0px;
 }
+
+.block-done-projects .container {
+	border-bottom: 1px solid black;
+}
+
+
+
+.stat-item-level {
+	float: left;
+	background-color: tomato;
+	width: 60px;
+}
+
+
+.stat-item-time {
+	float: left;
+	background-color: pink;
+	width: 60px;
+}
+
+.stat-item-pay {
+	float: right;
+	background-color: tomato;
+	width: 60px;
+}
+
+
 .contact-block {
 	padding-top: 55px;
 	padding-bottom: 55px;
+	background-image: url(../img/map.jpg);
+	background-repeat: no-repeat;
 }
 .contact {
 	background-color: #eee;
