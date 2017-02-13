@@ -380,6 +380,14 @@ fieldset {
 	width: 320px;
 	padding: 50px;
 }
+
+.tel-number {
+	text-decoration: none;
+	font-size: 16px;
+  line-height: 24px;
+	color: #000000;
+}
+
 .feedback {
 	background-color: #aaa;
 	width: 960px;
@@ -395,14 +403,41 @@ fieldset {
 	padding-bottom: 70px;
 }
 
+
+
 .footer-social-buttons {
-	background-color: #bbb;
 	width: 260px;
 	float: left;
 	margin-right: 120px;
 }
+
+.social-btn {
+	display: inline-block;
+	width: 45px;
+	height: 45px;
+	border-radius: 50%;
+	margin-right: 10px;
+	background-color: gray;
+}
+
+.social-btn-vk {
+	background-image: url(../img/vk-icon.png);
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+}
+
+.social-btn-fb {
+	background-image: url(../img/fb-icon.png);
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+}
+.social-btn-inst {
+	background-image: url(../img/insta-icon.png);
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+}
+
 .footer-discount-info {
-	background-color: yellow;
 	width: 580px;
 	float: left;
 }
