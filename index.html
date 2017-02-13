@@ -42,7 +42,7 @@
 
 	<div class="slider">
 		<div class="container">
-			<div class="slider-item" style="background-image: url('./img/slide1.png')" >
+			<div class="slider-item slider-item-active" style="background-image: url('./img/slide1.png')" >
 				<div class="slider-item-content">
 					<b class="slider-item-header">Долго, дорого, скрупулезно.</b>
 					<p class="slider-item-text">Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
@@ -66,13 +66,15 @@
 				</div>
 			</div>
 
-			<div class="slider-dots">
-				<input type="radio" name="slide1" id="slider1" checked>
-				<label for="slider1"></label>
-				<input type="radio" name="slide2" id="slider2">
-				<label for="slider2"></label>
-				<input type="radio" name="slide3" id="slider3">
-				<label for="slider3"></label>
+			<div class="slider-wrapper">
+				<form class="slider-dots" action="#" method="#">
+					<input type="radio" name="slide" id="slider1" checked>
+					<label for="slider1"></label>
+					<input type="radio" name="slide" id="slider2">
+					<label for="slider2"></label>
+					<input type="radio" name="slide" id="slider3">
+					<label for="slider3"></label>
+				</form>
 			</div>
 
 		</div>
@@ -103,66 +105,72 @@
 		</div>
 	</div>
 
-	<div class="block-about-firm">
-		<div class="container clearfix">
-			<section class="about-firm">
-				<p><b class="about-firm-lead">Мы - маленькая, но гордая дизайн студия из  Краснодара.</b></p>
-				<p class="about-firm-principles">Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива.Работаем не покладая рук, как роботы</p>
-				<span class="about-firm-services">Выполняем заказы на разработку:</span>
-				<ul class="service-list">
-					<li class="service-list-item">Веб-сайтов любой сложности</li>
-					<li class="service-list-item">Мобильных приложений для iOS и Android</li>
-					<li class="service-list-item">Слайд-шоу и видео для корпоративных презентаций</li>
-				</ul>
-			</section>
-			<section class="about-firm-statistic">
-				<img alt="Логотип Nerd's" src="img/nerds-illustration.jpg" width="360" height="208">
-				<span>С 2004 года любим точность во всем:</span>
-				<div class="statistic-wrapper clearfix">
-					<div class="stat-item-level">
-						<span class="stat-item-percent">146<sup>%</sup></span>
-						<span class="stat-item-description">Уровень самоотдачи</span>
+	<div class="block-about-firm-wrapper">
+		<div class="container">
+			<div class="block-about-firm clearfix">
+				<section class="about-firm">
+					<p><b class="about-firm-lead">Мы - маленькая, но гордая дизайн студия из  Краснодара.</b></p>
+					<p class="about-firm-principles">Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива.Работаем не покладая рук, как роботы</p>
+					<p class="about-firm-services">Выполняем заказы на разработку:</span>
+					<ul class="service-list">
+						<li class="service-list-item">Веб-сайтов любой сложности</li>
+						<li class="service-list-item">Мобильных приложений для iOS и Android</li>
+						<li class="service-list-item">Слайд-шоу и видео для корпоративных презентаций</li>
+					</ul>
+				</section>
+				<section class="about-firm-statistic">
+					<img alt="Логотип Nerd's" src="img/nerds-illustration.jpg" width="360" height="208">
+					<p class="stat-head">С 2004 года любим точность во всем:</p>
+					<div class="statistic-wrapper clearfix">
+						<div class="stat-item">
+							<p class="stat-item-percent">146<sup>%</sup></p>
+							<p class="stat-item-description">Уровень самоотдачи</p>
+						</div>
+						<div class="stat-item">
+							<p class="stat-item-percent">100<sup>%</sup></p>
+							<p class="stat-item-description">Соблюдение сроков</p>
+						</div>
+						<div class="stat-item">
+							<p class="stat-item-percent">50<sup>%</sup></p>
+							<p class="stat-item-description">Минимальная предоплата</p>
+						</div>
 					</div>
-					<div class="stat-item-time">
-						<span class="stat-item-percent">100<sup>%</sup></span>
-						<span class="stat-item-description">Соблюдение сроков</span>
-					</div>
-					<div class="stat-item-pay">
-						<span class="stat-item-percent">50<sup>%</sup></span>
-						<span class="stat-item-description">Минимальная предоплата</span>
-					</div>
-				</div>
-			</section>
+				</section>
+			</div>
 		</div>
 	</div>
 
-	<div class="block-done-projects">
-		<div class="container clearfix">
-			<a href="#" class="done-projects">
-				<img alt="html academy" src="img/htmlacademy-project.png" width="199" height="68">
-			</a>
-			<a href="#" class="done-projects">
-				<img alt="Bardershop Borodinski" src="img/barbershop-project.png" width="209" height="90">
-			</a>
-			<a href="#" class="done-projects">
-				<img alt="Pink" src="img/pink-project.png" width="185" height="52">
-			</a>
-			<a href="#" class="done-projects">
-				<img alt="Mishka" src="img/mishka-project.png" width="173" height="84">
-			</a>
+	<div class="block-done-projects-wrapper">
+		<div class="container">
+			<div class="block-done-projects clearfix">
+				<a href="#" class="done-projects">
+					<img alt="html academy" src="img/htmlacademy-project.png" width="199" height="68">
+				</a>
+				<a href="#" class="done-projects">
+					<img alt="Bardershop Borodinski" src="img/barbershop-project.png" width="209" height="90">
+				</a>
+				<a href="#" class="done-projects">
+					<img alt="Pink" src="img/pink-project.png" width="185" height="52">
+				</a>
+				<a href="#" class="done-projects">
+					<img alt="Mishka" src="img/mishka-project.png" width="173" height="84">
+				</a>
+			</div>
 		</div>
 	</div>
 
 	<footer class="footer">
-		<div class="container">
+
 			<section class="contact-block">
-				<div class="contact">
-					<h3>N&euml;rds Design Studio</h3>
-					<p>
-						Адрес: 191186, г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
-						<a href="tel:78122757575">Телефон: +7 (812) 275-75-75</a>
-					</p>
-					<a class="btn btn-red" href="#">Напишите нам</a>
+				<div class="container">
+					<div class="contact">
+						<h3>N&euml;rds Design Studio</h3>
+						<p>
+							Адрес: 191186, г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
+							<a href="tel:78122757575">Телефон: +7 (812) 275-75-75</a>
+						</p>
+						<a class="btn btn-red" href="#">Напишите нам</a>
+					</div>
 				</div>
 			</section>
 
@@ -187,17 +195,18 @@
 			</section>
 
 			<section class="footer-social clearfix">
-				<div class="footer-social-buttons">
-					<a class="social-btn social-btn-vk" href="#">Вконтакте</a>
-					<a class="social-btn social-btn-fb" href="#">Фейсбук</a>
-					<a class="social-btn social-btn-inst" href="#">Инстаграм</a>
-				</div>
-				<div class="footer-discount-info">
-					<b>Давайте дружить, это выгодно!</b>
-					<p>Скидка 10% для друзей из социальных сетей.</p>
+				<div class="container">
+					<div class="footer-social-buttons">
+						<a class="social-btn social-btn-vk" href="#">Вконтакте</a>
+						<a class="social-btn social-btn-fb" href="#">Фейсбук</a>
+						<a class="social-btn social-btn-inst" href="#">Инстаграм</a>
+					</div>
+					<div class="footer-discount-info">
+						<b>Давайте дружить, это выгодно!</b>
+						<p>Скидка 10% для друзей из социальных сетей.</p>
+					</div>
 				</div>
 			</section>
-		</div>
 	</footer>
 
 </body>
