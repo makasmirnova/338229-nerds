@@ -184,6 +184,8 @@ textarea::-moz-placeholder {
 .topic {
 	padding-bottom: 120px;
 	padding-top: 85px;
+	text-align: center;
+
 }
 
 .slider {
@@ -469,7 +471,7 @@ textarea::-moz-placeholder {
 }
 
 .feedback {
-	display: block;
+	display: none;
 	width: 100%;
 	position: absolute;
 	top: -50px;
