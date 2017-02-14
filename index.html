@@ -35,7 +35,7 @@
 				</nav>
 			</div>
 			<div class="login-block">
-				<a class="header-basket header-basket-current" href="#"><span>Корзина</span></a>
+				<a class="header-basket" href="#"><span>Корзина</span></a>
 			</div>
 		</div>
 	</header>
@@ -45,7 +45,7 @@
 			<div class="slider-item slider-item-active" style="background-image: url('./img/slide1.png')" >
 				<div class="slider-item-content">
 					<b class="slider-item-header">Долго, дорого, скрупулезно.</b>
-					<p class="slider-item-text">Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
+					<p class="slider-item-text">Математически выверенный дизайн<br>для вашего сайта или мобильного приложения.</p>
 					<a class="btn btn-red" href="#">Узнать больше</a>
 				</div>
 			</div>
@@ -85,19 +85,19 @@
 			<ul class="service-features clearfix">
 				<li class="service-features-item">
 					<img src="img/website-pic.jpg" alt="Веб-сайты"  width="300" height="146">
-					<h2>Веб-сайты</h2>
+					<h2 class="service-features-header">Веб-сайты</h2>
 					<p>Мир никогда не будет прежним после того, как увидит ваш сайт!</p>
 					<a class="btn btn-red" href="#">Заказать</a>
 				</li>
 				<li class="service-features-item">
 					<img src="img/app-pic.jpg" alt="Веб-сайты"  width="300" height="146">
-					<h2>Приложения</h2>
+					<h2 class="service-features-header">Приложения</h2>
 					<p>Покорите топ-10 приложений в AppStore и Google Play</p>
 					<a class="btn btn-green" href="#">Заказать</a>
 				</li>
 				<li class="service-features-item">
 					<img src="img/presentation-pic.jpg" alt="Веб-сайты"  width="300" height="146">
-					<h2>Презентации</h2>
+					<h2 class="service-features-header">Презентации</h2>
 					<p>Вы даже не подозреваете, насколько вы изумительны!</p>
 					<a class="btn btn-yellow" href="#">Заказать</a>
 				</li>
@@ -164,46 +164,56 @@
 			<section class="contact-block">
 				<div class="container">
 					<div class="contact">
-						<h3>N&euml;rds Design Studio</h3>
-						<p>
-							Адрес: 191186, г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
-							<a class="tel-number" href="tel:78122757575">Телефон: +7 (812) 275-75-75</a>
+						<h3 class="contact-header">N&euml;rds Design Studio</h3>
+						<p class="contact-address">
+							191186, Санкт-Петербург,<br>ул. Б. Конюшенная, д. 19/8
 						</p>
+						<a class="contact-tel" href="tel:78122757575">тел. +7 (812) 275-75-75</a>
 						<a class="btn btn-red" href="#">Напишите нам</a>
 					</div>
 				</div>
 			</section>
 
 			<section class="feedback">
-				<span class="feedback-close">Х</span>
-				<h2>Напишите нам</h2>
-				<form class="feedback-form" action="#" method="get">
-					<div>
-						<label for="form-name">Ваше имя</label>
-						<input type="text" id="form-name" value="name" placeholder="Представьтесь, пожалуйста">
-					</div>
-					<div>
-						<label for="form-email">Ваш e-mail</label>
-						<input type="text" id="form-email" value="email" placeholder="Для отправки ответа">
-					</div>
-					<div>
-						<label for="form-text"></label>
-						<textarea id="form-text">В свободной форме</textarea>
-					</div>
-					<button type="submit" class="btn btn-red">Отправить</button>
-				</form>
+				<div class="feedback-wrapper">
+					<div class="feedback-close"></div>
+					<h2 class="feedback-header">Напишите нам</h2>
+					<form class="feedback-form" action="#" method="get">
+						<div class="feedback-line clearfix">
+							<div class="feedback-contact">
+								<label class="feedback-label" for="form-name">Ваше имя</label>
+								<input class="feedback-input" type="text" id="form-name" value="" placeholder="Представьтесь, пожалуйста">
+							</div>
+							<div class="feedback-contact">
+								<label class="feedback-label" for="form-email">Ваш e-mail</label>
+								<input class="feedback-input error" type="text" id="form-email" value="" placeholder="Для отправки ответа">
+							</div>
+						</div>
+						<div>
+							<label class="feedback-label" for="form-text">Текст письма:</label>
+							<textarea class="feedback-textarea" id="form-text" placeholder="В свободной форме"></textarea>
+						</div>
+						<button type="submit" class="btn btn-red">Отправить</button>
+					</form>
+				</div>
 			</section>
 
 			<section class="footer-social clearfix">
 				<div class="container">
 					<div class="footer-social-buttons">
-						<a class="social-btn social-btn-vk" href="#"></a>
-						<a class="social-btn social-btn-fb" href="#"></a>
-						<a class="social-btn social-btn-inst" href="#"></a>
+						<a class="social-btn " href="#">
+							<span class="social-btn-vk"></span>
+						</a>
+						<a class="social-btn " href="#">
+							<span class="social-btn-fb"></span>
+						</a>
+						<a class="social-btn" href="#">
+							<span class="social-btn-inst"></span>
+						</a>
 					</div>
-					<div class="footer-discount-info">
-						<b>Давайте дружить, это выгодно!</b>
-						<p>Скидка 10% для друзей из социальных сетей.</p>
+					<div class="footer-discount">
+						<b class="footer-discount-header">Давайте дружить, это выгодно!</b>
+						<p class="footer-discount-text">Скидка 10% для друзей из социальных сетей.</p>
 					</div>
 				</div>
 			</section>
