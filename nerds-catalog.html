@@ -52,9 +52,18 @@
 
 				<fieldset class="filter-group">
 					<legend>Стоимость</legend>
-					<div class="price-slider"></div>
-					<div class="controls">
-						от <input class="min-price" type="text" value="0"> до <input class="max-price" type="text" value="15000">
+					<div class="price-slider">
+						<div class="range-controls">
+							<div class="scale">
+								<div class="bar"></div>
+							</div>
+							<div class="toggle toggle-min"></div>
+							<div class="toggle toggle-max"></div>
+						</div>
+						<div class="price-controls">
+							<label class="min-price">от <input name="min-price" type="text" value="0"></label>
+							<label class="max-price">до <input name="max-price" type="text" value="15000"></label>
+						</div>
 					</div>
 				</fieldset>
 
@@ -188,51 +197,65 @@
 	</main>
 
 	<footer class="footer">
-		<div class="container">
+
 			<section class="contact-block">
-				<div class="contact">
-					<h3>N&euml;rds Design Studio</h3>
-					<p>
-						Адрес: 191186, г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
-						<a href="tel:78122757575">Телефон: +7 (812) 275-75-75</a>
-					</p>
-					<a class="btn btn-red" href="#">Напишите нам</a>
+				<div class="container">
+					<div class="contact">
+						<h3 class="contact-header">N&euml;rds Design Studio</h3>
+						<p class="contact-address">
+							191186, Санкт-Петербург,<br>ул. Б. Конюшенная, д. 19/8
+						</p>
+						<a class="contact-tel" href="tel:78122757575">тел. +7 (812) 275-75-75</a>
+						<a class="btn btn-red" href="#">Напишите нам</a>
+					</div>
 				</div>
 			</section>
 
 			<section class="feedback">
-				<span class="feedback-close">Х</span>
-				<h2>Напишите нам</h2>
-				<form class="feedback-form" action="#" method="get">
-					<div>
-						<label for="form-name">Ваше имя</label>
-						<input type="text" id="form-name" value="name" placeholder="Представьтесь, пожалуйста">
-					</div>
-					<div>
-						<label for="form-email">Ваш e-mail</label>
-						<input type="text" id="form-email" value="email" placeholder="Для отправки ответа">
-					</div>
-					<div>
-						<label for="form-text"></label>
-						<textarea id="form-text">В свободной форме</textarea>
-					</div>
-					<button type="submit" class="btn btn-red">Отправить</button>
-				</form>
+				<div class="feedback-wrapper">
+					<div class="feedback-close"></div>
+					<h2 class="feedback-header">Напишите нам</h2>
+					<form class="feedback-form" action="#" method="get">
+						<div class="feedback-line clearfix">
+							<div class="feedback-contact">
+								<label class="feedback-label" for="form-name">Ваше имя</label>
+								<input class="feedback-input" type="text" id="form-name" value="" placeholder="Представьтесь, пожалуйста">
+							</div>
+							<div class="feedback-contact">
+								<label class="feedback-label" for="form-email">Ваш e-mail</label>
+								<input class="feedback-input error" type="text" id="form-email" value="" placeholder="Для отправки ответа">
+							</div>
+						</div>
+						<div>
+							<label class="feedback-label" for="form-text">Текст письма:</label>
+							<textarea class="feedback-textarea" id="form-text" placeholder="В свободной форме"></textarea>
+						</div>
+						<button type="submit" class="btn btn-red">Отправить</button>
+					</form>
+				</div>
 			</section>
 
 			<section class="footer-social clearfix">
-				<div class="footer-social-buttons">
-					<a class="social-btn social-btn-vk" href="#">Вконтакте</a>
-					<a class="social-btn social-btn-fb" href="#">Фейсбук</a>
-					<a class="social-btn social-btn-inst" href="#">Инстаграм</a>
-				</div>
-				<div class="footer-discount-info">
-					<b>Давайте дружить, это выгодно!</b>
-					<p>Скидка 10% для друзей из социальных сетей.</p>
+				<div class="container">
+					<div class="footer-social-buttons">
+						<a class="social-btn " href="#">
+							<span class="social-btn-vk"></span>
+						</a>
+						<a class="social-btn " href="#">
+							<span class="social-btn-fb"></span>
+						</a>
+						<a class="social-btn" href="#">
+							<span class="social-btn-inst"></span>
+						</a>
+					</div>
+					<div class="footer-discount">
+						<b class="footer-discount-header">Давайте дружить, это выгодно!</b>
+						<p class="footer-discount-text">Скидка 10% для друзей из социальных сетей.</p>
+					</div>
 				</div>
 			</section>
-		</div>
 	</footer>
+
 
 </body>
 </html>
