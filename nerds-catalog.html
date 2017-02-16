@@ -70,17 +70,17 @@
 				<fieldset class="filter-group">
 					<legend>Сетка</legend>
 					<ul class="filter-list">
-						<li>
-							<input type="radio" name="item-net" id="net-1" value="Adaptive" checked>
-							<label for="net-1">Адаптивная</label>
+						<li class="clearfix">
+							<input type="radio" name="item-net" id="net-1" value="Adaptive" class="filter-radio" checked>
+							<label for="net-1" class="filter-label">Адаптивная</label>
 						</li>
-						<li>
-							<input type="radio" name="item-net" id="net-2" value="Fixed">
-							<label for="net-2">Фиксированная</label>
+						<li class="clearfix">
+							<input type="radio" name="item-net" id="net-2" value="Fixed" class="filter-radio" >
+							<label for="net-2" class="filter-label">Фиксированная</label>
 						</li>
-						<li>
-							<input type="radio" name="item-net" id="net-3" value="Rubber">
-							<label for="net-3">Резиновая</label>
+						<li class="clearfix">
+							<input type="radio" name="item-net" id="net-3" value="Rubber" class="filter-radio" >
+							<label for="net-3" class="filter-label">Резиновая</label>
 						</li>
 					</ul>
 				</fieldset>
@@ -88,29 +88,29 @@
 				<fieldset class="filter-group">
 					<legend>Особенности</legend>
 					<ul class="filter-list">
-						<li>
-							<input type="checkbox" name="item-feature-1" id="feature-1" value="slider" checked>
-							<label for="feature-1">Слайдер</label>
+						<li class="clearfix">
+							<input type="checkbox" name="item-feature-1" id="feature-1" value="slider" class="filter-checkbox" checked>
+							<label for="feature-1" class="filter-label">Слайдер</label>
 						</li>
-						<li>
-							<input type="checkbox" name="item-feature-2" id="feature-2" value="block-features">
-							<label for="feature-2">Блок преимуществ</label>
+						<li class="clearfix">
+							<input type="checkbox" name="item-feature-2" id="feature-2" value="block-features" class="filter-checkbox" >
+							<label for="feature-2" class="filter-label">Блок преимуществ</label>
 						</li>
-						<li>
-							<input type="checkbox" name="item-feature-3" id="feature-3" value="news" checked>
-							<label for="feature-3">Новости</label>
+						<li class="clearfix">
+							<input type="checkbox" name="item-feature-3" id="feature-3" value="news"  class="filter-checkbox" checked>
+							<label for="feature-3" class="filter-label">Новости</label>
 						</li>
-						<li>
-							<input type="checkbox" name="item-feature-4" id="feature-4" value="gallery">
-							<label for="feature-4">Галерея</label>
-						<li>
-							<input type="checkbox" name="item-feature-5" id="feature-5" value="basket">
-							<label for="feature-5">Корзина</label>
+						<li class="clearfix">
+							<input type="checkbox" name="item-feature-4" id="feature-4" value="gallery" class="filter-checkbox" >
+							<label for="feature-4" class="filter-label">Галерея</label>
+						<li class="clearfix">
+							<input type="checkbox" name="item-feature-5" id="feature-5" value="basket" class="filter-checkbox" >
+							<label for="feature-5" class="filter-label">Корзина</label>
 						</li>
 					</ul>
 				</fieldset>
 
-				<button class="btn-gray" type="submit">Показать</button>
+				<button class="filter-btn" type="submit">Показать</button>
 			</form>
 
 			<section class="catalog">
@@ -120,11 +120,11 @@
 						<b>Сортировать:</b>
 					</div>
 					<div class="sort-type">
-						<a>по цене</a>
-						<a>по типу</a>
-						<a>по названию</a>
-						<a class="sort-down">&#8595;</a>
-						<a class="sort-up">&#8593;</a>
+						<a href="" class="sort-text active">по цене</a>
+						<a href="" class="sort-text">по типу</a>
+						<a href="" class="sort-text">по названию</a>
+						<a href="" class="sort-down active"><span class="sort-down-icon"></span></a>
+						<a href="" class="sort-up"><span class="sort-up-icon"></span></a>
 					</div>
 				</div>
 				<div class="catalog-data clearfix">
@@ -132,54 +132,54 @@
 					<article class="catalog-item">
 						<img src="img/img-sedona.jpg" alt="Шаблон Sedona. Информационный сайт для туристов" width="360" height="576">
 						<div class="catalog-item-info">
-							<h2><a href="#">Sedona</a></h2>
-							<p>Информационный сайт для туристов</p>
-							<a class="btn" href="#">9900 руб.</a>
+							<h2><a href="#" class="catalog-item-header">Sedona</a></h2>
+							<p class="catalog-item-text">Информационный сайт для туристов</p>
+							<a class="btn btn-red catalog-item-btn" href="#">9900 руб.</a>
 						</div>
 					</article>
 
 					<article class="catalog-item">
 						<img src="img/img-pink.jpg" alt="Шаблон PINK. Продуктовый лендинг приложений" width="360" height="576">
 						<div class="catalog-item-info">
-							<h2><a href="#">Pink app</a></h2>
-							<p>Продуктовый лендинг приложения для iOS и Android</p>
-							<a class="btn" href="#">9900 руб.</a>
+							<h2><a href="#" class="catalog-item-header">Pink app</a></h2>
+							<p class="catalog-item-text">Продуктовый лендинг приложения для iOS и Android</p>
+							<a class="btn btn-red catalog-item-btn" href="#">9900 руб.</a>
 						</div>
 					</article>
 
 					<article class="catalog-item">
 						<img src="img/img-barbershop.jpg" alt="Шаблон Barbershop. Сайт салона красоты" width="360" height="576">
 						<div class="catalog-item-info">
-							<h2><a href="#">Barbershop</a></h2>
-							<p>Сайт салона красоты. Для мужчин, да.</p>
-							<a class="btn" href="#">9900 руб.</a>
+							<h2><a href="#" class="catalog-item-header">Barbershop</a></h2>
+							<p class="catalog-item-text">Сайт салона красоты. Для мужчин, да.</p>
+							<a class="btn btn-red catalog-item-btn" href="#">9900 руб.</a>
 						</div>
 					</article>
 
 					<article class="catalog-item">
 						<img src="img/img-mishka.jpg" alt="Шаблон MISHKA. Интернет магазин игрушек" width="360" height="576">
 						<div class="catalog-item-info">
-							<h2><a href="#">Mishka</a></h2>
-							<p>Интернет-магазин вязаных игрушек</p>
-							<a class="btn" href="#">9900 руб.</a>
+							<h2><a href="#" class="catalog-item-header">Mishka</a></h2>
+							<p class="catalog-item-text">Интернет-магазин вязаных игрушек</p>
+							<a class="btn btn-red catalog-item-btn" href="#">9900 руб.</a>
 						</div>
 					</article>
 
 					<article class="catalog-item">
 						<img src="img/img-aplus.jpg" alt="Шаблон A Plus. Лендинг курсов" width="360" height="576">
 						<div class="catalog-item-info">
-							<h2><a href="#">A Plus</a></h2>
-							<p>Лендинг курсов повышения квалификации</p>
-							<a class="btn" href="#">9900 руб.</a>
+							<h2><a href="#" class="catalog-item-header">A Plus</a></h2>
+							<p class="catalog-item-text">Лендинг курсов повышения квалификации</p>
+							<a class="btn btn-red catalog-item-btn" href="#">9900 руб.</a>
 						</div>
 					</article>
 
 					<article class="catalog-item">
 						<img src="img/img-kvast.jpg" alt="Шаблон Кваст. Промо-сайт" width="360" height="576">
 						<div class="catalog-item-info">
-							<h2><a href="#">Кваст</a></h2>
-							<p>Промо-сайт производителя крафтового кваса</p>
-							<a class="btn" href="#">9900 руб.</a>
+							<h2><a href="#" class="catalog-item-header">Кваст</a></h2>
+							<p class="catalog-item-text">Промо-сайт производителя крафтового кваса</p>
+							<a class="btn btn-red catalog-item-btn" href="#">9900 руб.</a>
 						</div>
 					</article>
 				</div>

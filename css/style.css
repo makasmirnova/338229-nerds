@@ -39,6 +39,10 @@ fieldset {
 	border: 0;
 }
 
+button {
+	cursor: pointer;
+}
+
 input::-webkit-input-placeholder {
   color: #444444;
 	opacity: 0.5;
@@ -584,7 +588,7 @@ textarea::-moz-placeholder {
 
 .price-slider {
 	width: 260px;
-	margin: 50px auto;
+	margin: 40px 0;
 }
 
 .range-controls {
@@ -643,10 +647,10 @@ textarea::-moz-placeholder {
 }
 
 .price-controls input {
-	font-size: 12px;
+	font-size: 16px;
 	text-align: center;
 	color: #283136;
-	width: 60px;
+	width: 80px;
 	padding: 8px 10px;
 	margin-left: 10px;
 	border: none;
@@ -655,7 +659,7 @@ textarea::-moz-placeholder {
 }
 
 .max-price {
-	text-align: center;
+	text-align: right;
 }
 
 
@@ -730,32 +734,224 @@ textarea::-moz-placeholder {
 }
 
 .filter-item {
-	background-color: yellow;
 	float: left;
 }
+
+.filter-group {
+	margin-bottom: 20px;
+}
+
+.filter-group legend {
+	font-weight: bold;
+	font-size: 18px;
+	text-transform: uppercase;
+	margin-bottom: 20px;
+}
+
+.filter-list {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.filter-checkbox,
+.filter-radio {
+	-webkit-appearance: none;
+	outline: none;
+	display: block;
+	float: left;
+}
+
+.filter-checkbox::before,
+.filter-radio::before {
+	content: "";
+	display: block;
+	padding: 15px;
+	margin-right: 10px;
+	background-repeat: no-repeat;
+	background-position: 0;
+}
+
+.filter-checkbox::before {
+	background-image: url("../img/checkbox-off.png");
+}
+
+.filter-checkbox:checked::before {
+	background-image: url("../img/checkbox-on.png");
+}
+
+.filter-radio::before {
+	background-image: url("../img/radio-off.png");
+}
+
+.filter-radio:checked::before {
+	background-image: url("../img/radio-on.png");
+}
+
+.filter-label {
+	float: left;
+	padding: 5px 0;
+}
+
+.filter-btn {
+	width: 100%;
+	padding: 15px 20px;
+	text-transform: uppercase;
+	color: #000;
+	font-family: Roboto, Helvetica, sans-serif;
+	font-size: 16px;
+	font-weight: 500;
+	line-height: 18px;
+	background-color: #eee;
+	border: none;
+	border-radius: 5px;
+}
+
 .catalog {
-	background-color: violet;
 	float: right;
 	width: 760px;
 }
+
+.sort {
+		margin-bottom: 60px;
+}
+
 .sort-title {
-	background-color: #ffffff;
 	width: 160px;
 	float: left;
+	font-weight: bold;
+	font-size: 18px;
+	text-transform: uppercase;
 }
 .sort-type {
-	background-color: #eee;
-	width: 360px;
 	float: right;
+	font-size: 14px;
+	line-height: 18px;
+	text-align: right;
+	text-transform: uppercase;
 }
+
+.sort-text {
+	display: block;
+	float: left;
+	padding: 4px 0;
+	margin-right: 30px;
+	text-decoration: none;
+	color: #000;
+	opacity: 0.3;
+}
+
+.sort-text.active {
+	opacity: 1;
+}
+
+.sort-text:hover {
+	opacity: 0.5;
+}
+
+
+.sort-down,
+.sort-up {
+	display: block;
+	float: left;
+	padding: 8px;
+	opacity: 0.3;
+}
+
+.sort-down-icon {
+	display: block;
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 9px 4.5px 0 4.5px;
+	border-color: #000 transparent transparent transparent;
+}
+
+.sort-up-icon {
+	display: block;
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 0 4.5px 9px 4.5px;
+	border-color: transparent transparent #000 transparent;
+}
+
+.sort-down:hover,
+.sort-up:hover {
+	opacity: 0.5;
+}
+
+.sort-down.active,
+.sort-up.active {
+	opacity: 1;
+}
+
 .catalog-item {
 	float: left;
+	position: relative;
 	width: 360px;
 	margin-right: 40px;
+	margin-bottom: 35px;
+	border: 1px solid #e9e9e9;
+	border-radius: 6px 6px 0 0;
+	overflow: hidden;
 }
 .catalog-item:nth-child(2n) {
 	margin-right: 0;
 }
+
+.catalog-item img {
+	width: 100%;
+	display: block;
+}
+
+.catalog-item::before {
+	content: '';
+	display: block;
+	height: 40px;
+	background-image: url("../img/browser-light.png");
+	background-repeat: no-repeat;
+}
+
+.catalog-item:hover::before {
+	background-image: url("../img/browser-dark.png");
+}
+
+.catalog-item-info {
+	position: absolute;
+	bottom: 0;
+	background: #eee;
+	display: block;
+	padding: 30px;
+	text-align: center;
+	width: 100%;
+	min-height: 230px;
+	opacity: 0;
+}
+
+.catalog-item:hover .catalog-item-info {
+	opacity: 1;
+}
+
+.catalog-item-header {
+	text-decoration: none;
+	text-transform: uppercase;
+	color: #000;
+ }
+
+.catalog-item-text {
+	color: #666;
+	margin-bottom: 30px;
+}
+
+.catalog-item-btn {
+	display: block;
+	width: 200px;
+	height: 50px;
+	margin: 0 auto;
+	border-radius: 5px;
+}
+
 .catalog-data {
 	padding-bottom: 60px;
 }
