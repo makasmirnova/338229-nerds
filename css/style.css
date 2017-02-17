@@ -406,17 +406,10 @@ textarea::-moz-placeholder {
 	width: 200px;
 	margin-right: 45px;
 	margin-left: 45px;
-	border-right: 2px solid #000;
 	overflow: hidden;
 }
 
-.done-projects::after {
-	content: '';
-	width: 2px;
-	height: 40px;
-	background-color: #eee;
-	float: left;
-}
+
 .done-projects img {
 	opacity: 0.2;
 }
@@ -433,8 +426,6 @@ textarea::-moz-placeholder {
 .block-done-projects {
 	border-bottom: 1px solid #eee;
 }
-
-
 
 .stat-item {
 	float: left;
