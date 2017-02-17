@@ -145,7 +145,7 @@ textarea::-moz-placeholder {
 }
 
 .header-nav-link.current{
-	border-bottom: 2px solid #fb565a;
+	box-shadow: 0 2px 0 0 #fb565a;
 }
 
 .login-block {
@@ -229,7 +229,7 @@ textarea::-moz-placeholder {
 	font-size: 16px;
 	line-height: 24px;
 	margin-top: 26px;
-	margin-bottom: 39px;
+	margin-bottom: 40px;
 }
 
 .slider .btn {
@@ -259,6 +259,7 @@ textarea::-moz-placeholder {
 	line-height: 18px;
 	text-align: center;
 	border: none;
+	border-radius: 4px;
 }
 .btn:active {
 	box-shadow: inset 0 3px 0 0 rgba(0, 0, 0, 0.1);
@@ -302,23 +303,21 @@ textarea::-moz-placeholder {
 
 .block-services {
 	padding-top: 80px;
-	padding-bottom: 80px;
+	padding-bottom: 82px;
 }
 
-.block-about-firm-wrapper {
-}
 
 .block-about-firm {
-	border-top: 1px solid #eee;
-	border-bottom: 1px solid #eee;
+	border-top: 2px solid #eee;
+	border-bottom: 2px solid #eee;
 	padding-top: 40px;
-	padding-bottom: 40px;
+	padding-bottom: 49px;
 }
 
 .about-firm {
 	width: 660px;
 	float: left;
-	padding-top: 40px;
+	padding-top: 34px;
 }
 
 .about-firm-lead {
@@ -326,12 +325,19 @@ textarea::-moz-placeholder {
 	font-size: 45px;
 	line-height: 45px;
 	font-weight: 500;
+	letter-spacing:
+}
+
+.about-firm-principles {
+	margin-top: 33px;
+	margin-bottom: 39px;
 }
 
 .about-firm-services {
 	font-size: 16px;
 	font-weight: bold;
 	text-transform: uppercase;
+	margin-bottom: 24px;
 }
 
 .service-list {
@@ -350,6 +356,9 @@ textarea::-moz-placeholder {
 	background-color: #fb565a;
 }
 
+.service-list-item {
+		margin-bottom: 24px;
+}
 
 .block-done-projects {
 	padding-top: 50px;
@@ -363,6 +372,8 @@ textarea::-moz-placeholder {
 
 .service-features-header {
 	font-size: 23px;
+	letter-spacing: 0.5px;
+	margin-bottom: 0;
 }
 
 .service-features-item {
@@ -370,11 +381,19 @@ textarea::-moz-placeholder {
 	float: left;
 	margin-right: 100px;
 	list-style: none;
-
 }
 
 .service-features-item:last-child {
 	margin-right: 0px;
+}
+
+.service-features-text {
+	margin-bottom: 31px;
+	letter-spacing: -0.1px;
+}
+
+.service-features-btn {
+	width: 160px;
 }
 
 .about-firm-statistic {
@@ -387,10 +406,22 @@ textarea::-moz-placeholder {
 	width: 200px;
 	margin-right: 45px;
 	margin-left: 45px;
+	border-right: 2px solid #000;
+	overflow: hidden;
+}
+
+.done-projects::after {
+	content: '';
+	width: 2px;
+	height: 40px;
+	background-color: #eee;
+	float: left;
+}
+.done-projects img {
 	opacity: 0.2;
 }
 
-.done-projects:hover {
+.done-projects img:hover {
 	opacity: 1;
 }
 
@@ -408,7 +439,7 @@ textarea::-moz-placeholder {
 .stat-item {
 	float: left;
 	width: 110px;
-	margin-right: 15px;
+	margin-right: 9px;
 }
 
 .stat-item:last-child {
@@ -419,6 +450,8 @@ textarea::-moz-placeholder {
 	text-transform: uppercase;
 	font-weight: bold;
 	text-align: center;
+	margin-top: 29px;
+	margin-bottom: 41px;
 }
 
 .stat-item-percent {
@@ -427,8 +460,13 @@ textarea::-moz-placeholder {
 	margin: 0;
 }
 
+.stat-item-percent sup {
+	font-size: 60%;
+}
+
 .stat-item-description {
 	line-height: 18px;
+	margin-top: 20px;
 }
 
 .contact-block {
@@ -674,29 +712,30 @@ textarea::-moz-placeholder {
 	margin-right: 80px;
 }
 
-.social-btn {
+.social-link {
 	display: inline-block;
 	width: 80px;
 	height: 80px;
+	padding: 25px;
 	border-radius: 50%;
 	margin-right: 6px;
 	background-color: #e1e1e1;
 }
 
-.social-btn:hover {
+.social-link:hover {
 	background-color: #e74246;
 }
 
-.social-btn:active {
+.social-link:active {
 	background-color: #d7373b;
 	box-shadow: inset 0 3px 0 0 rgba(0, 1, 1, 0.1);
 }
 
-.social-btn:active span {
+.social-link:active span {
 	opacity: 0.3;
 }
 
-.social-btn span {
+.social-btn {
 	display: block;
 	width: 100%;
 	height: 100%;
@@ -705,13 +744,16 @@ textarea::-moz-placeholder {
 }
 
 .social-btn-vk {
-	background-image: url(../img/vk-icon.png);
+	background: url(../img/spritesheet.png);
+	background-position: 33px -28px;
 }
 .social-btn-fb {
-	background-image: url(../img/fb-icon.png);
+	background: url(../img/spritesheet.png);
+	background-position: 4px -2px;
 }
 .social-btn-inst {
-	background-image: url(../img/insta-icon.png);
+	background: url(../img/spritesheet.png);
+	background-position: 36px -2px;
 }
 
 .footer-discount {
@@ -760,6 +802,7 @@ textarea::-moz-placeholder {
 	outline: none;
 	display: block;
 	float: left;
+	cursor: pointer;
 }
 
 .filter-checkbox::before,
@@ -770,6 +813,19 @@ textarea::-moz-placeholder {
 	margin-right: 10px;
 	background-repeat: no-repeat;
 	background-position: 0;
+	opacity: 0.4
+}
+
+.filter-list li:hover .filter-checkbox::before,
+.filter-list li:hover .filter-radio::before {
+	opacity: 1;
+}
+
+.filter-checkbox[disabled],
+.filter-radio[disabled],
+.filter-checkbox[disabled] + label,
+.filter-radio[disabled] + label {
+	opacity: 0.1;
 }
 
 .filter-checkbox::before {
@@ -791,6 +847,7 @@ textarea::-moz-placeholder {
 .filter-label {
 	float: left;
 	padding: 5px 0;
+	cursor: pointer;
 }
 
 .filter-btn {
@@ -805,6 +862,17 @@ textarea::-moz-placeholder {
 	background-color: #eee;
 	border: none;
 	border-radius: 5px;
+	outline: none;
+}
+
+.filter-btn:hover {
+	background-color: #dfdfdf;
+}
+
+.filter-btn:active{
+	background-color: #d5d5d5;
+	color: rgba(0,0,0,0.3);
+	box-shadow: inset 0 3px 0 0 rgba(0, 0, 0, 0.1);
 }
 
 .catalog {
@@ -967,4 +1035,20 @@ textarea::-moz-placeholder {
     color: #000000;
     text-decoration: none;
 		border-radius: 2px;
+}
+
+.pages a:hover {
+	background-color: #dfdfdf;
+}
+
+.pages a:active {
+	box-shadow: inset 0 3px 0 0 rgba(0, 0, 0, 0.1);
+	background-color: #d5d5d5;
+	color: rgba(0,0,0,0.3);
+
+}
+
+.pages .current {
+	box-shadow: inset 0 0 0 3px #dbdbdb;
+	background-color: #ffffff;
 }

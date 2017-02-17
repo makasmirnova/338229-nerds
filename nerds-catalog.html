@@ -14,7 +14,7 @@
 	<header class="header">
 		<div class="container clearfix">
 			<div class="nav-container">
-				<nav class="header-nav">
+				<nav class="header-nav clearfix">
 					<a class="header-logo">
 						<img src="img/nerds-logo.png" alt="Nerd's - дизайн студия" width="160" height="65">
 					</a>
@@ -26,7 +26,7 @@
 							<a class="header-nav-link" href="#">Клиенты</a>
 						</li>
 						<li>
-							<a hclass="header-nav-link current" ref="nerds-catalog.html">Магазин</a>
+							<a class="header-nav-link current" href="nerds-catalog.html">Магазин</a>
 						</li>
 						<li>
 							<a class="header-nav-link" href="#">Контакты</a>
@@ -35,7 +35,7 @@
 				</nav>
 			</div>
 			<div class="login-block">
-				<a class="header-basket" href="#">Корзина</a>
+				<a class="header-basket" href="#"><span>Корзина</span></a>
 			</div>
 		</div>
 	</header>
@@ -75,7 +75,7 @@
 							<label for="net-1" class="filter-label">Адаптивная</label>
 						</li>
 						<li class="clearfix">
-							<input type="radio" name="item-net" id="net-2" value="Fixed" class="filter-radio" >
+							<input type="radio" name="item-net" id="net-2" value="Fixed" class="filter-radio" disabled>
 							<label for="net-2" class="filter-label">Фиксированная</label>
 						</li>
 						<li class="clearfix">
@@ -101,7 +101,7 @@
 							<label for="feature-3" class="filter-label">Новости</label>
 						</li>
 						<li class="clearfix">
-							<input type="checkbox" name="item-feature-4" id="feature-4" value="gallery" class="filter-checkbox" >
+							<input type="checkbox" name="item-feature-4" id="feature-4" value="gallery" class="filter-checkbox" disabled>
 							<label for="feature-4" class="filter-label">Галерея</label>
 						<li class="clearfix">
 							<input type="checkbox" name="item-feature-5" id="feature-5" value="basket" class="filter-checkbox" >
@@ -185,10 +185,10 @@
 				</div>
 
 				<div class="pages">
-					<a href="#">1</a>
+					<a class="current" href="#">1</a>
 					<a href="#">2</a>
 					<a href="#">3</a>
-					<a class="btn-gray" href="#">Следующая</a>
+					<a href="#">Следующая</a>
 				</div>
 
 			</section>
@@ -238,14 +238,14 @@
 			<section class="footer-social clearfix">
 				<div class="container">
 					<div class="footer-social-buttons">
-						<a class="social-btn " href="#">
-							<span class="social-btn-vk"></span>
+						<a class="social-link" href="#">
+							<span class="social-btn social-btn-vk"></span>
 						</a>
-						<a class="social-btn " href="#">
-							<span class="social-btn-fb"></span>
+						<a class="social-link" href="#">
+							<span class="social-btn social-btn-fb"></span>
 						</a>
-						<a class="social-btn" href="#">
-							<span class="social-btn-inst"></span>
+						<a class="social-link" href="#">
+							<span class="social-btn social-btn-inst"></span>
 						</a>
 					</div>
 					<div class="footer-discount">
