@@ -141,11 +141,12 @@ textarea::-moz-placeholder {
 }
 
 .header-nav-list a:active {
-	opacity: 0.3;
+	color: rgba(0, 0, 0, 0.3);
 }
 
 .header-nav-link.current{
 	box-shadow: 0 2px 0 0 #fb565a;
+	padding-bottom: 5px;
 }
 
 .login-block {
@@ -169,7 +170,7 @@ textarea::-moz-placeholder {
 }
 
 .header-basket span:active {
-	opacity: 0.3;
+	color: rgba(0, 0, 0, 0.3);
 }
 
 .header-basket::before {
@@ -186,8 +187,9 @@ textarea::-moz-placeholder {
 
 
 .topic {
-	padding-bottom: 120px;
-	padding-top: 35px;
+	padding-bottom: 110px;
+	margin-bottom: 55px;
+	padding-top: 31px;
 	text-align: center;
 	background-color: #eeeeee
 }
@@ -205,6 +207,7 @@ textarea::-moz-placeholder {
 	background-repeat: no-repeat;
 	background-position: top right;
 	min-height: 387px;
+	
 }
 
 .slider-item-active {
@@ -298,7 +301,7 @@ textarea::-moz-placeholder {
 
 
 .content {
-	padding-top: 60px;
+	padding-top: 0px;
 }
 
 .block-services {
@@ -778,7 +781,7 @@ textarea::-moz-placeholder {
 	font-weight: bold;
 	font-size: 18px;
 	text-transform: uppercase;
-	margin-bottom: 20px;
+	margin-bottom: 10px;
 }
 
 .filter-list {
@@ -794,6 +797,7 @@ textarea::-moz-placeholder {
 	display: block;
 	float: left;
 	cursor: pointer;
+	margin-bottom: 13px;
 }
 
 .filter-checkbox::before,
@@ -872,7 +876,7 @@ textarea::-moz-placeholder {
 }
 
 .sort {
-		margin-bottom: 60px;
+		margin-bottom: 48px;
 }
 
 .sort-title {
@@ -881,7 +885,10 @@ textarea::-moz-placeholder {
 	font-weight: bold;
 	font-size: 18px;
 	text-transform: uppercase;
+
 }
+
+
 .sort-type {
 	float: right;
 	font-size: 14px;
@@ -893,7 +900,7 @@ textarea::-moz-placeholder {
 .sort-text {
 	display: block;
 	float: left;
-	padding: 4px 0;
+	padding: 0px 0px;
 	margin-right: 30px;
 	text-decoration: none;
 	color: #000;
