@@ -845,53 +845,51 @@ textarea::-moz-placeholder {
 }
 
 .filter-checkbox, .filter-radio {
-  -webkit-appearance: none;
-  outline: none;
-  display: block;
-  float: left;
-  cursor: pointer;
-  margin-bottom: 10px;
+  display: none;
 }
 
-.filter-checkbox::before, .filter-radio::before {
+.filter-label::before {
   content: "";
+  float: left;
   display: block;
   padding: 15px;
   margin-right: 5px;
   margin-left: 1px;
+  margin-bottom: 10px;
   background-repeat: no-repeat;
   background-position: 0;
   opacity: 0.4
 }
 
-.filter-list li:hover .filter-checkbox::before, .filter-list li:hover .filter-radio::before {
-  opacity: 1;
+.filter-label-text {
+  float: left;
+  color: #283136;
+  padding: 5px 0;
+  cursor: pointer;
 }
 
-.filter-checkbox[disabled], .filter-radio[disabled], .filter-checkbox[disabled]+label, .filter-radio[disabled]+label {
-  opacity: 0.1;
-}
-
-.filter-checkbox::before {
+.filter-checkbox+.filter-label::before {
   background-image: url("../img/checkbox-off.png");
 }
 
-.filter-checkbox:checked::before {
+.filter-checkbox:checked+.filter-label::before {
   background-image: url("../img/checkbox-on.png");
 }
 
-.filter-radio::before {
+.filter-radio+.filter-label::before {
   background-image: url("../img/radio-off.png");
 }
 
-.filter-radio:checked::before {
+.filter-radio:checked+.filter-label::before {
   background-image: url("../img/radio-on.png");
 }
 
-.filter-label {
-  float: left;
-  padding: 5px 0;
-  cursor: pointer;
+.filter-list li:hover .filter-label::before, .filter-list li:hover .filter-label::before {
+  opacity: 1;
+}
+
+.filter-checkbox[disabled]+.filter-label::before, .filter-radio[disabled]+.filter-label::before, .filter-checkbox[disabled]+.filter-label .filter-label-text, .filter-radio[disabled]+.filter-label .filter-label-text {
+  opacity: 0.1;
 }
 
 .filter-btn {
