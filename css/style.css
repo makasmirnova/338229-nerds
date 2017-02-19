@@ -44,46 +44,6 @@ button {
   cursor: pointer;
 }
 
-input::-webkit-input-placeholder {
-  color: #444444;
-  opacity: 0.5;
-}
-
-input::-moz-placeholder {
-  color: #444444;
-  opacity: 0.5;
-}
-
-input::-ms-input-placeholder {
-  color: #444444;
-  opacity: 0.5;
-}
-
-input::-moz-placeholder {
-  color: #444444;
-  opacity: 0.5;
-}
-
-textarea::-webkit-input-placeholder {
-  color: #444444;
-  opacity: 0.5;
-}
-
-textarea::-moz-placeholder {
-  color: #444444;
-  opacity: 0.5;
-}
-
-textarea::-ms-input-placeholder {
-  color: #444444;
-  opacity: 0.5;
-}
-
-textarea::-moz-placeholder {
-  color: #444444;
-  opacity: 0.5;
-}
-
 .clearfix::after {
   content: "";
   display: table;
@@ -99,7 +59,6 @@ textarea::-moz-placeholder {
 
 .header {
   min-height: 85px;
-  padding-bottom: 20px;
   padding-top: 48px;
   background-color: #eeeeee;
 }
@@ -196,7 +155,7 @@ textarea::-moz-placeholder {
 .topic {
   padding-bottom: 107px;
   margin-bottom: 58px;
-  padding-top: 30px;
+  padding-top: 50px;
   text-align: center;
   background-color: #eeeeee
 }
@@ -222,7 +181,7 @@ textarea::-moz-placeholder {
 
 .slider-item-content {
   width: 400px;
-  padding-top: 34px;
+  padding-top: 54px;
   padding-bottom: 80px;
 }
 
@@ -247,14 +206,38 @@ textarea::-moz-placeholder {
 
 .slider-wrapper {
   position: relative;
-  width: 100px;
   margin: 0 auto;
 }
 
 .slider-dots {
   position: absolute;
-  top: -115px;
-  left: 50%;
+  top: -113px;
+  left: 537px;
+}
+
+.slider-input {
+  display: none;
+}
+
+.slider-label {
+  position: relative;
+  display: inline-block;
+  padding: 9px;
+  margin-right: 13px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.slider-input:checked+.slider-label::before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  padding: 2px;
+  border: 2px solid #ccc;
+  border-radius: 50%;
 }
 
 .slide-1 {
@@ -327,7 +310,7 @@ textarea::-moz-placeholder {
 }
 
 .content {
-  padding-top: 0px;
+  padding-top: 0;
 }
 
 .block-services {
@@ -353,7 +336,6 @@ textarea::-moz-placeholder {
   font-size: 45px;
   line-height: 45px;
   font-weight: 500;
-  letter-spacing:
 }
 
 .about-firm-principles {
@@ -379,13 +361,17 @@ textarea::-moz-placeholder {
   display: inline-block;
   height: 2px;
   width: 25px;
-  margin-bottom: 6px;
+  margin-bottom: 3px;
   margin-right: 10px;
   background-color: #fb565a;
 }
 
 .service-list-item {
   margin-bottom: 24px;
+}
+
+.block-done-projects-wrapper {
+  margin-bottom: 20px;
 }
 
 .block-done-projects {
@@ -412,7 +398,7 @@ textarea::-moz-placeholder {
 }
 
 .service-features-item:last-child {
-  margin-right: 0px;
+  margin-right: 0;
 }
 
 .service-features-text {
@@ -537,9 +523,7 @@ textarea::-moz-placeholder {
 }
 
 .contact-address {
-  margin: 0;
-  margin-top: 25px;
-  margin-bottom: 14px;
+  margin: 25px 0 14px;
   line-height: 19px;
   color: #666666;
 }
@@ -568,22 +552,23 @@ textarea::-moz-placeholder {
   display: none;
   width: 100%;
   position: absolute;
-  top: -50px;
+  top: -78px;
 }
 
 .feedback-wrapper {
   position: relative;
   width: 960px;
+  height: 591px;
   margin: 0 auto;
-  padding: 70px 100px;
+  padding: 68px 100px;
   background-color: #fff;
-  box-shadow: 0 10px 15px 0 rgba(0, 0, 0, 0.4);
+  box-shadow: 0 20px 50px 0 rgba(0, 0, 0, 0.7);
 }
 
 .feedback-close {
   position: absolute;
-  right: 100px;
-  top: 70px;
+  right: 86px;
+  top: 74px;
   background-image: url("../img/close-cross.png");
   width: 30px;
   height: 30px;
@@ -602,14 +587,15 @@ textarea::-moz-placeholder {
 
 .feedback-header {
   font-size: 45px;
+  font-weight: 500;
   line-height: 45px;
   margin: 0;
-  margin-bottom: 50px;
+  margin-bottom: 38px;
   text-transform: none;
 }
 
 .feedback-line {
-  margin-bottom: 35px;
+  margin-bottom: 31px;
 }
 
 .feedback-contact {
@@ -625,13 +611,13 @@ textarea::-moz-placeholder {
 .feedback-label {
   display: block;
   font-weight: bold;
-  margin-bottom: 10px;
+  margin-bottom: 6px;
 }
 
 .feedback-input {
   border: 2px solid #eee;
   width: 100%;
-  padding: 15px;
+  padding: 12px;
   height: 50px;
   outline: none;
 }
@@ -639,9 +625,9 @@ textarea::-moz-placeholder {
 .feedback-textarea {
   border: 2px solid #eee;
   width: 100%;
-  padding: 15px;
-  height: 116px;
-  margin-bottom: 45px;
+  padding: 12px;
+  height: 118px;
+  margin-bottom: 40px;
   outline: none;
   resize: none;
 }
@@ -667,6 +653,47 @@ textarea::-moz-placeholder {
 
 .feedback .btn {
   width: 260px;
+  height: 50px;
+}
+
+.feedback input::-webkit-input-placeholder {
+  color: #444444;
+  opacity: 0.5;
+}
+
+.feedback input::-moz-placeholder {
+  color: #444444;
+  opacity: 0.5;
+}
+
+.feedback input::-ms-input-placeholder {
+  color: #444444;
+  opacity: 0.5;
+}
+
+.feedback input::-moz-placeholder {
+  color: #444444;
+  opacity: 0.5;
+}
+
+.feedback textarea::-webkit-input-placeholder {
+  color: #444444;
+  opacity: 0.5;
+}
+
+.feedback textarea::-moz-placeholder {
+  color: #444444;
+  opacity: 0.5;
+}
+
+.feedback textarea::-ms-input-placeholder {
+  color: #444444;
+  opacity: 0.5;
+}
+
+.feedback textarea::-moz-placeholder {
+  color: #444444;
+  opacity: 0.5;
 }
 
 .price-slider {
@@ -702,7 +729,7 @@ textarea::-moz-placeholder {
   position: absolute;
   box-sizing: content-box;
   top: 30px;
-  left: 0px;
+  left: 0;
   width: 4px;
   height: 4px;
   border: 8px solid #ffffff;
@@ -978,7 +1005,7 @@ textarea::-moz-placeholder {
   width: 0;
   height: 0;
   border-style: solid;
-  border-width: 9px 4.5px 0 4.5px;
+  border-width: 9px 4px 0 4px;
   border-color: #000 transparent transparent transparent;
 }
 
