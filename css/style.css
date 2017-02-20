@@ -109,7 +109,9 @@ body {
 
 .header-basket span {
   display: inline-block;
+  max-width: 150px;
   vertical-align: bottom;
+  text-align: left;
   font-weight: 500;
   line-height: 30px;
 }
